@@ -1,23 +1,21 @@
 <template>
-  <div class="max-w-screen-xl mx-auto px-4 py-8 lg:py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-      <div class="lg:col-span-6">
+  <div class="max-w-screen">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="lg:w-2">
         <!-- Treść z lewej strony... -->
       </div>
-      <div class="lg:col-span-6">
-        <!-- Kontener na wtyczkę Facebook Page -->
-        <div class="w-full lg:w-auto px-4 py-8 my-8 rounded-lg">
-          <div
-            class="fb-page"
-            data-href="https://www.facebook.com/MaxVerstappen"
-            data-tabs="timeline,events,messages"
-            data-small-header="false"
-            data-adapt-container-width="true"
-            data-hide-cover="false"
-            data-show-facepile="true"
-          ></div>
-        </div>
-      </div>
+
+      <div
+        class="fb-page"
+        data-href="https://www.facebook.com/MaxVerstappen"
+        data-tabs="timeline,events,messages"
+        data-width="290"
+        data-height="600"
+        data-small-header="false"
+        data-adapt-container-width="false"
+        data-hide-cover="false"
+        data-show-facepile="true"
+      ></div>
     </div>
   </div>
 </template>

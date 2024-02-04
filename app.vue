@@ -221,7 +221,7 @@ onMounted(() => {
       <div
         class="grid items-center gap-8 mb-8 lg:mb-16 lg:gap-12 lg:grid-cols-12"
       >
-        <div class="col-span-6 text-center sm:mb-6 lg:text-left lg:mb-0">
+        <div class="lg:col-span-6 text-center sm:mb-6 lg:text-left lg:mb-0">
           <h1
             class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white"
           >
@@ -236,13 +236,18 @@ onMounted(() => {
             consequuntur dignissimos! Explicabo tenetur vel molestias animi et.
           </p>
         </div>
-        <div id="app">
-          <FacebookPage />
+        <!-- Komponent FacebookPage -->
+        <div class="lg:col-span-5">
+          <div class="flex justify-center">
+            <div class="w-full lg:max-w-xl rounded-lg">
+              <!-- Treść FacebookPage, załóżmy, że komponent jest odpowiednio zintegrowany -->
+              <FacebookPage />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
   <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl text-center">
       <a
